@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matematica y logica </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    font-family:'Cormorant Garamond', serif;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+}
+
+/* Fondo */
+body::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:url("fondo.jpg") center/cover no-repeat;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.65);
+    z-index:-1;
+}
+
+h1{
+    font-family:'Playfair Display',serif;
+    font-size:3.8rem;
+    letter-spacing:2px;
+    margin-bottom:15px;
+    text-shadow:0 0 20px rgba(0,0,0,0.9);
+}
+
+p{
+    font-size:1.4rem;
+    margin-bottom:50px;
+    opacity:0.9;
+}
+
+/* Botón elegante clásico */
+.btn{
+    padding:14px 45px;
+    border:2px solid rgba(255,255,255,0.8);
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    letter-spacing:2px;
+    font-size:1rem;
+    transition:0.3s ease;
+    backdrop-filter:blur(3px);
+}
+
+.btn:hover{
+    background:rgba(255,255,255,0.15);
+    transform:translateY(-4px);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Matematica y Logica</h1>
+<p>Universidad Cenfotec</p>
+<a href="trabajos.html" class="btn">TRABAJOS</a>
+
+</body>
+</html>

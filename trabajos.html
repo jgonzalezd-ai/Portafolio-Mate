@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabajos</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    font-family:'Poppins',sans-serif;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position:relative;
+    text-align:center;
+}
+
+/* Fondo */
+body::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:url("fondo.jpg") center/cover no-repeat;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.65);
+    z-index:-1;
+}
+
+h1{
+    font-family:'Playfair Display',serif;
+    font-size:3.5rem;
+    margin-bottom:50px;
+    letter-spacing:2px;
+    text-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+.contenedor{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.btn{
+    padding:14px 45px;
+    border:2px solid rgba(255,255,255,0.8);
+    color:white;
+    text-decoration:none;
+    font-size:1rem;
+    letter-spacing:2px;
+    border-radius:40px;
+    transition:0.3s ease;
+    backdrop-filter:blur(3px);
+}
+
+.btn:hover{
+    background:rgba(255,255,255,0.15);
+    transform:translateY(-4px);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Trabajos</h1>
+
+<div class="contenedor">
+    <a href="archivos/semana1.pdf" target="_blank" class="btn">Semana 1</a>
+    <a href="archivos/semana2.pdf" target="_blank" class="btn">Semana 2</a>
+    <a href="archivos/semana3.pdf" target="_blank" class="btn">Semana 3</a>
+    <a href="archivos/semana4.pdf" target="_blank" class="btn">Semana 4</a>
+</div>
+
+</body>
+</html>
